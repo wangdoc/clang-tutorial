@@ -1,0 +1,8 @@
+dir: docs
+output: dist
+site: C 语言教程
+theme: wangdoc
+customization: false
+themeDir: loppo-theme
+direction: ltr
+id: clang

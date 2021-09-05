@@ -33,4 +33,4 @@ jobs:
           FOLDER: dist # The folder the action should deploy.
           TARGET_FOLDER: dist/clang
           CLEAN: true # Automatically remove deleted files from the deploy branch
-          COMMIT_MESSAGE: update
+          COMMIT_MESSAGE: update from Clang tutorial

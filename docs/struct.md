@@ -264,7 +264,7 @@ myStruct.prop == (*ptr).prop == ptr->prop
 struct 结构的成员可以是另一个 struct 结构。
 
 ```c
-struct breed {
+struct species {
   char* name;
   int kinds;
 };

@@ -423,7 +423,7 @@ struct vstring {
 `chars`数组到底有多少个成员，可以在为`vstring`分配内存时确定。
 
 ```c
-struct vstring* str = malloc(sizeof(struct vstring) + n * sizeof(char));
+struct vstring* str = (struct vstring*) malloc(sizeof(struct vstring) + n * sizeof(char));
 str->len = n;
 ```
 

@@ -534,7 +534,7 @@ C 语言允许将数组字面量作为参数，传入函数。
 ```c
 // 数组变量作为参数
 int a[] = {2, 3, 4, 5};
-int sum = sum_array(b, 4);
+int sum = sum_array(a, 4);
 
 // 数组字面量作为参数
 int sum = sum_array((int []){2, 3, 4, 5}, 4);

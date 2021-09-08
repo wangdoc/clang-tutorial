@@ -27,7 +27,7 @@ don't
 
 并非所有的词都能用作变量名，有些词在 C 语言里面有特殊含义（比如`int`），另一些词是命令（比如`continue`），它们都称为关键字，不能用作变量名。另外，C 语言还保留了一些词，供未来使用，这些保留字也不能用作变量名。下面就是 C 语言主要的关键字和保留字。
 
-> auto, break, case, char, const, continue, default, do, double, else, enum, extern, flosat, for, goto ,if ,inline,int, long, register, restrict, return, short, signed, sizeof, static, struct, typedef, union, unsigned, void, volatile, while
+> auto, break, case, char, const, continue, default, do, double, else, enum, extern, float, for, goto, if, inline, int, long, register, restrict, return, short, signed, sizeof, static, struct, switch, typedef, union, unsigned, void, volatile, while
 
 另外，两个下划线开头的变量名，以及一个下划线 + 大写英文字母开头的变量名，都是系统保留的，自己不应该起这样的变量名。
 

@@ -103,7 +103,7 @@ struct {
 
 上面示例中，在声明变量`b1`和`b2`的同时，为它们赋值。
 
-下一章接受的`typedef`命令可以为 struct 结构指定一个别名，这样使用起来更简洁。
+下一章介绍的`typedef`命令可以为 struct 结构指定一个别名，这样使用起来更简洁。
 
 ```c
 typedef struct cell_phone {

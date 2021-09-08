@@ -82,7 +82,7 @@ printf("%d\n", x.a);           // 12
 printf("%d\n", *foo_int_p);    // 12
 
 x.b = 3.141592;
-printf("%f\n", x.g);           // 3.141592
+printf("%f\n", x.b);           // 3.141592
 printf("%f\n", *foo_float_p);  // 3.141592
 ```
 

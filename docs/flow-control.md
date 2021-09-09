@@ -417,5 +417,20 @@ bail:
 
 上面代码有很复杂的嵌套循环，不使用 goto 的话，想要完全跳出所有循环，写起来很麻烦。
 
+goto 的另一个用途是提早结束多重判断。
+
+```c
+if (do_something() == ERR)
+  goto error;
+if (do_something2() == ERR)
+  goto error;
+if (do_something3() == ERR)
+  goto error;
+if (do_something4() == ERR)
+  goto error;
+```
+
+上面示例有四个判断，只要有一个发现错误，就使用 goto 跳过后面的判断。
+
 注意，goto 只能在同一个函数之中跳转，并不能跳转到其他函数。
 

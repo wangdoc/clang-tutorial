@@ -621,8 +621,8 @@ if ((b + c) > 300) do_something();
 ```c
 int dostuff(int, unsigned char);
 
-char m = 42;
-unsigned short n = 43;
+char a = 42;
+unsigned short b = 43;
 long long int c = dostuff(a, b);
 ```
 

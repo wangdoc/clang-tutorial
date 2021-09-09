@@ -623,10 +623,10 @@ int dostuff(int, unsigned char);
 
 char m = 42;
 unsigned short n = 43;
-long long int c = dostuff(a, b);
+long long int c = dostuff(m, n);
 ```
 
-上面示例中，参数变量`a`和`b`不管原来的类型是什么，都会转成函数`dostuff()`定义的参数类型。
+上面示例中，参数变量`m`和`n`不管原来的类型是什么，都会转成函数`dostuff()`定义的参数类型。
 
 下面是返回值自动转换类型的例子。
 

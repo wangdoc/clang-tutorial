@@ -80,7 +80,9 @@ int main(void) {
 // File bar.c
 #include "bar.h"
 
-int add(int, int);
+int add(int a, int b) {
+  return a + b;
+}
 ```
 
 现在重新编译，就可以顺利得到二进制可执行文件。

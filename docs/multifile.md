@@ -77,7 +77,7 @@ int main(void) {
 然后，最好在`bar.c`里面也加载这个头文件，这样可以让编译器验证，函数原型与函数定义是否一致。
 
 ```c
-// File bar.h
+// File bar.c
 #include "bar.h"
 
 int add(int, int);

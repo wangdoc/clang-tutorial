@@ -197,7 +197,7 @@ freopen("output.txt", "w", stdout);
 printf("hello");
 ```
 
-上面示例将文件`output.txt`关联到`stdout`，此后向`stdout`写入的内容，都会写入`foo.txt`。由于`printf()`默认就是输出到`stdout`，所以运行上面的代码以后，文件`output.txt`会被写入`hello`。
+上面示例将文件`output.txt`关联到`stdout`，此后向`stdout`写入的内容，都会写入`output.txt`。由于`printf()`默认就是输出到`stdout`，所以运行上面的代码以后，文件`output.txt`会被写入`hello`。
 
 `freopen()`的返回值是它的第三个参数（文件指针）。如果打开失败（比如文件不存在），会返回空指针 NULL。
 

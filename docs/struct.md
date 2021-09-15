@@ -285,7 +285,7 @@ struct fish {
 struct fish shark = {"shark", 9, {"Selachimorpha", 500}};
 
 // 写法二
-struct breek myBreed = {"Selachimorpha", 500};
+struct species myBreed = {"Selachimorpha", 500};
 struct fish shark = {"shark", 9, myBreed};
 
 // 写法三

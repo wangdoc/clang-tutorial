@@ -296,7 +296,7 @@ fprintf(stderr, "Something number.\n");
 
 ## fscanf()
 
-`fscanf()`用于按照给定的模式，从文件中读取内容，用法跟`scanf()`类似。区别是`scanf()`总是从`stdin`读取数据，而`fscanf()`是从文件读入数据，它的原因定义在头文件`stdio.h`，第一个参数必须是文件指针。
+`fscanf()`用于按照给定的模式，从文件中读取内容，用法跟`scanf()`类似。区别是`scanf()`总是从`stdin`读取数据，而`fscanf()`是从文件读入数据，它的原型定义在头文件`stdio.h`，第一个参数必须是文件指针。
 
 ```c
 int fscanf(FILE* stream, const char* format, ...);
@@ -412,7 +412,12 @@ fputs(words, stdout);
 `fwrite()`用来一次性写入较大的数据块，主要用途是将数组数据一次性写入文件，适合写入二进制数据。它的原型定义在`stdio.h`。
 
 ```c
-size_t fwrite(const void* ptr, size_t size, size_t nmemb, FILE* fp);
+size_t fwrite(
+  const void* ptr,
+  size_t size,
+  size_t nmemb,
+  FILE* fp
+);
 ```
 
 它接受四个参数。
@@ -459,7 +464,7 @@ fwrite(&s, sizeof(s), 1, fp);
 
 上面示例中，`s`是一个 Struct 结构指针，可以看成是一个成员的数组。注意，如果`s`的属性包含指针，存储时需要小心，因为保存指针可能没意义，还原出来的时候，并不能保证指针指向的数据还存在。
 
-`fwrite()`以及后面要介绍的`fwrite()`，比较适合读写二进制数据，因为它们不会对写入的数据进行解读。二进制数据可能包含空字符`\0`，这是 C 语言的字符串结尾标记，所以读写二进制文件，不适合使用文本读写函数（比如`fprintf()`等）。
+`fwrite()`以及后面要介绍的`fread()`，比较适合读写二进制数据，因为它们不会对写入的数据进行解读。二进制数据可能包含空字符`\0`，这是 C 语言的字符串结尾标记，所以读写二进制文件，不适合使用文本读写函数（比如`fprintf()`等）。
 
 下面是一个写入二进制文件的例子。
 
@@ -502,7 +507,12 @@ for (int i = 1; i <= 100; i++) {
 `fread()`函数用于一次性从文件读取较大的数据块，主要用途是将文件内容读入一个数组，适合读取二进制数据。它的原型定义在头文件`stdio.h`。
 
 ```c
-size_t fread(void* ptr, size_t size, size_t nmemb, FILE* fp);
+size_t fread(
+  void* ptr,
+  size_t size,
+  size_t nmemb,
+  FILE* fp
+);
 ```
 
 它接受四个参数，与`fwrite()`完全相同。

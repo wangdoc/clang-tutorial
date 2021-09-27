@@ -599,7 +599,7 @@ if ((-a) < 0) printf("negative\n");
 else printf("positive\n");
 ```
 
-上面示例中，变量`a`是 unsigned char 类型，这个类型不可能小于0，但是`-a`会自动转为 int 类型，导致上面的代码输入 negative。
+上面示例中，变量`a`是 unsigned char 类型，这个类型不可能小于0，但是`-a`不是 unsigned char 类型，会自动转为 int 类型，导致上面的代码输出 negative。
 
 再看下面的例子。
 

@@ -216,7 +216,7 @@ if (print == &print) // true
 ```c
 void (*print_ptr)(int) = &print;
 // 或
-void (*print_ptr) = print;
+void (*print_ptr)(int) = print;
 
 if (print_ptr == print) // true
 ```

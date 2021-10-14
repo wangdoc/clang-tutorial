@@ -55,7 +55,7 @@ signal(SIGINT, orig_handler);
 SIG_DFL 表示默认的处理函数。
 
 ```c
-signal(SIGINT, SIG_IGN);
+signal(SIGINT, SIG_DFL);
 ```
 
 上面示例中，SIGINT 的处理函数是默认处理函数，由当前实现决定。

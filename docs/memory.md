@@ -157,7 +157,7 @@ void gobble(double arr[], int n) {
 
 两者的区别主要有两点：
 
-（1）`calloc()`接受两个参数，第一个参数是数据类型的单位字节长度，第二个是该数据类型的数量。
+（1）`calloc()`接受两个参数，第一个参数是所需数据类型的数量，第二个是该数据类型的单位字节长度。
 
 ```c
 void* calloc(size_t n, size_t size);

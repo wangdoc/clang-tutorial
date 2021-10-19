@@ -27,7 +27,7 @@ arr[0] = 5;
 ```c
 // const 表示指向的值 *x 不能修改
 int const * x
-# 或者
+// 或者
 const int * x
 ```
 

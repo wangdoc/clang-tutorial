@@ -157,7 +157,7 @@ void gobble(double arr[], int n) {
 
 两者的区别主要有两点：
 
-（1）`calloc()`接受两个参数，第一个参数是数据类型的单位字节长度，第二个是该数据类型的数量。
+（1）`calloc()`接受两个参数，第一个参数是某种数据类型的值的数量，第二个是该数据类型的单位字节长度。
 
 ```c
 void* calloc(size_t n, size_t size);
@@ -168,11 +168,11 @@ void* calloc(size_t n, size_t size);
 （2）`calloc()`会将所分配的内存全部初始化为`0`。`malloc()`不会对内存进行初始化，如果想要初始化为`0`，还要额外调用`memset()`函数。
 
 ```c
-int *p = calloc(10, sizeof(int));
+int* p = calloc(10, sizeof(int));
 
 // 等同于
-int *q = malloc(sizeof(int) * 10);
-memset(q, 0, sizeof(int) * 10);
+int* p = malloc(sizeof(int) * 10);
+memset(p, 0, sizeof(int) * 10);
 ```
 
 上面示例中，`calloc()`相当于`malloc() + memset()`。

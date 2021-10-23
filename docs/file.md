@@ -21,12 +21,19 @@ FILE* fp;
 
 int main(void) {
   FILE* fp;
-  fp = fopen("hello.txt", "r");
+  char c;
 
-  char c = fgetc(fp);
+  fp = fopen("hello.txt", "r");
+  if (fp == NULL) {
+    return -1;
+  }
+
+  c = fgetc(fp);
   printf("%c\n", c);
 
   fclose(fp);
+
+  return 0;
 }
 ```
 

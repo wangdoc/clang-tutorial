@@ -116,27 +116,27 @@ $ gcc hello.c
 
 上面命令使用`gcc`编译器，将源文件`hello.c`编译成二进制代码。注意，`$`是命令行提示符，你真正需要输入的是`$`后面的部分。
 
-运行这个命令以后，默认会在当前目录下生成一个编译产物文件`a.out`（assembler output 的缩写）。执行该文件，就会在屏幕上输出`Hello World`。
+运行这个命令以后，默认会在当前目录下生成一个编译产物文件`a.out`（assembler output 的缩写，Windows 平台为`a.exe`）。执行该文件，就会在屏幕上输出`Hello World`。
 
 ```bash
 $ ./a.out
 Hello World
 ```
 
-GCC 的`-o`参数可以指定编译产物的文件名。
+GCC 的`-o`参数（output 的缩写）可以指定编译产物的文件名。
 
 ```bash
 $ gcc -o hello hello.c
 ```
 
-上面命令的`-o hello`指定，编译产物的文件名为`hello`（取代`a.out`）。编译后就会生成一个名叫`hello`的可执行文件，相当于为`a.out`指定了名称。执行该文件，也会得到同样的结果。
+上面命令的`-o hello`指定，编译产物的文件名为`hello`（取代默认的`a.out`）。编译后就会生成一个名叫`hello`的可执行文件，相当于为`a.out`指定了名称。执行该文件，也会得到同样的结果。
 
 ```bash
 $ ./hello
 Hello World
 ```
 
-GCC 的`-std=`参数还可以指定按照哪个 C 语言的标准进行编译。
+GCC 的`-std=`参数（standard 的缩写）还可以指定按照哪个 C 语言的标准进行编译。
 
 ```bash
 $ gcc -std=c99 hello.c
@@ -144,3 +144,4 @@ $ gcc -std=c99 hello.c
 
 上面命令指定按照 C99 标准进行编译。
 
+注意，`-std`后面需要用`=`连接参数，而不是像上面的`-o`一样用空格，并且`=`前后也不能有多余的空格。

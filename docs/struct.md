@@ -378,7 +378,7 @@ for (struct node *cur = head; cur != NULL; cur = cur->next) {
 struct 还可以用来定义二进制位组成的数据结构，称为“位字段”（bit field），这对于操作底层的二进制数据非常有用。
 
 ```c
-typedef struct {
+struct {
   unsigned int ab:1;
   unsigned int cd:1;
   unsigned int ef:1;

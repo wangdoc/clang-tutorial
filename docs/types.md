@@ -296,6 +296,13 @@ if (isNormal)
   printf("Everything is OK.\n");
 ```
 
+也可以使用`true`表示真，`false`代表伪
+```c
+_Bool isNormal = true;
+if (isNormal)
+  printf("Everything is OK.\n");
+```
+
 头文件`stdbool.h`定义了另一个类型别名`bool`，并且定义了`true`代表`1`、`false`代表`0`。只要加载这个头文件，就可以使用这几个关键字。
 
 ```c

@@ -37,7 +37,7 @@ setlocale(LC_ALL, "C");
 下面的语句将格式本地化。
 
 ```c
-set_locale(LC_ALL, "");
+setlocale(LC_ALL, "");
 ```
 
 上面示例中，第二个参数为空字符，表示使用当前环境提供的本地化设置。

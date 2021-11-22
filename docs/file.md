@@ -639,7 +639,7 @@ fseek(fp, 0L, SEEK_SET);
 // 定位到文件末尾
 fseek(fp, 0L, SEEK_END);
 
-// 从当前位置前移2个字节
+// 从当前位置后移2个字节
 fseek(fp, 2L, SEEK_CUR);
 
 // 定位到文件第10个字节

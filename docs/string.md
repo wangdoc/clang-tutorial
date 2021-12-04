@@ -406,7 +406,7 @@ puts(s1); // "helloworld"
 `strncat()`用于连接两个字符串，用法与`strncat()`完全一致，只是增加了第三个参数，指定最大添加的字符数。在添加过程中，一旦达到指定的字符数，或者在源字符串中遇到空字符`\0`，就不再添加了。它的原型定义在`string.h`头文件里面。
 
 ```c
-int strncat(
+char* strncat(
   const char* dest,
   const char* src,
   size_t n

@@ -347,9 +347,9 @@ int main(void) {
 `strncpy()`跟`strcpy()`的用法完全一样，只是多了第3个参数，用来指定复制的最大字符数，防止溢出目标字符串变量的边界。
 
 ```c
-char *strncpy(
-  char *dest, 
-  char *src, 
+char* strncpy(
+  char* dest, 
+  char* src, 
   size_t n
 );
 ```
@@ -593,4 +593,3 @@ for (int i = 0; i < 7; i++) {
   printf("%s\n", weekdays[i]);
 }
 ```
-

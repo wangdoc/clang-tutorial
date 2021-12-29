@@ -327,7 +327,7 @@ C 语言还提供了一个`atexit()`函数，用来登记`exit()`执行时额外
 int atexit(void (*func)(void));
 ```
 
-`atexit()`的参数是一个函数指针。注意，它的参数函数（上例的`print`）不能接受参数，也不能有返回值。
+`atexit()`的参数是一个函数指针。注意，它的参数函数（下例的`print`）不能接受参数，也不能有返回值。
 
 ```c
 void print(void) {

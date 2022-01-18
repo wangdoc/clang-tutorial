@@ -12,10 +12,6 @@ stdint.h 定义了一些固定宽度的整数类型别名，主要有下面三�
 
 C 语言标准要求至少定义以下类型。
 
-- int8_t      uint8_t
-- int16_t     uint16_t
-- int32_t     uint32_t
-- int64_t     uint64_t
 - int_least8_t      uint_least8_t
 - int_least16_t     uint_least16_t
 - int_least32_t     uint_least32_t

@@ -5,17 +5,17 @@
 stdint.h 定义了一些固定宽度的整数类型别名，主要有下面三类。
 
 - 宽度完全确定的整数`intN_t`，比如`int32_t`。
-- 宽度不小少于某个大小的整数`int_leastN_t`，比如`int_least8_t`。
+- 宽度不小于某个大小的整数`int_leastN_t`，比如`int_least8_t`。
 - 宽度不小于某个大小、并且处理速度尽可能快的整数`int_fastN_t`，比如`int_fast64_t`。
 
 上面所有类型都是有符号的，类型名前面可以加一个前缀`u`，表示无符号类型，比如`uint16_t`。
 
-C 语言标准要求至少定义以下类型。
+C 语言标准要求定义以下类型。
 
-- int8_t      uint8_t
-- int16_t     uint16_t
-- int32_t     uint32_t
-- int64_t     uint64_t
+- int8_t（可选）      uint8_t（可选）
+- int16_t（可选）     uint16_t（可选）
+- int32_t（可选）    uint32_t（可选）
+- int64_t（可选）     uint64_t（可选）
 - int_least8_t      uint_least8_t
 - int_least16_t     uint_least16_t
 - int_least32_t     uint_least32_t

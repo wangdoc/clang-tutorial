@@ -17,7 +17,7 @@ long double powl(long double x, long double y);
 math.h 新定义了两个类型别名。
 
 - float_t：（当前系统）最有效执行 float 运算的类型，宽度至少与 float 一样。
-- double_t`：（当前系统）最有效执行 double 运算的类型，宽度至少与 double 一样。
+- double_t：（当前系统）最有效执行 double 运算的类型，宽度至少与 double 一样。
 
 它们的具体类型可以通过宏`FLT_EVAL_METHOD`来了解。
 
@@ -49,7 +49,7 @@ math.h 还定义了一些宏。
 |-----------------------|-----|
 | MATH_ERRNO | 系统使用 errno 表示数学错误 |
 | MATH_ERREXCEPT | 系统使用异常表示数学错误 |
-| MATH_ERRNO | MATH_ERREXCEPT	| 系统同时使用两者表示数学错误 |
+| MATH_ERREXCEPT	| 系统同时使用两者表示数学错误 |
 
 ## 数值类型
 

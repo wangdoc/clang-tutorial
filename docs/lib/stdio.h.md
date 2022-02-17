@@ -213,7 +213,7 @@ setvbuf(stdout, NULL, _IONBF, 0);
 
 ## ungetc()
 
-`ungetc()`将从缓存里面读取的上一个字符，重新放回缓存，下一个读取缓存的操作会从这个字符串开始。有些操作需要了解下一个字符是什么，再决定应该怎么处理，这时这个函数就很有用。
+`ungetc()`将从缓存里面读取的上一个字符，重新放回缓存，下一个读取缓存的操作会从这个字符开始。有些操作需要了解下一个字符是什么，再决定应该怎么处理，这时这个函数就很有用。
 
 它的原型如下。
 
@@ -227,7 +227,7 @@ int ungetc(int c, FILE *stream);
 int ch = fgetc(fp);
 
 if (isdigit(ch)) {
-  ch = fgetd(fp);
+  ch = fgetc(fp);
 }
 
 ungetc(ch, fp);

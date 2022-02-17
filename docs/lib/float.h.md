@@ -81,7 +81,7 @@
 - `DBL_MAX_EXP`
 - `LDBL_MAX_EXP`
 
-科学计数法的指数部分的十进制最大次幂
+（13）科学计数法的指数部分的十进制最大次幂
 
 - `FLT_MAX_10_EXP`
 - `DBL_MAX_10_EXP`

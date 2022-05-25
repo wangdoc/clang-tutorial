@@ -151,9 +151,9 @@ struct 结构占用的存储空间，不是各个属性存储空间的总和，�
 
 ```c
 struct foo {
-    int a;
-    char* b;
-    char c;
+  int a;
+  char* b;
+  char c;
 };
 printf("%d\n", sizeof(struct foo)); // 24
 ```
@@ -165,18 +165,18 @@ foo`真实的结构其实是下面这样。
 
 ```c
 struct foo {
-    int a;        // 4
-    char pad1[4]; // 填充4字节
-    char *b;      // 8
-    char c;       // 1
-    char pad2[7]; // 填充7字节
+  int a;        // 4
+  char pad1[4]; // 填充4字节
+  char *b;      // 8
+  char c;       // 1
+  char pad2[7]; // 填充7字节
 };
 printf("%d\n", sizeof(struct foo)); // 24
 ```
 
 为什么浪费这么多空间进行内存对齐呢？这是为了加快读写速度，把内存占用划分成等长的区块，就可以快速在 Struct 结构体中定位到每个属性的起始地址。
 
-由于这个特性，在有必要的情况下，定义 Struct 结构体时，可以采用存储空间递减的顺序，定义每个属性，这样就能节省一些空间。
+由于这个特性，在有必要的情况下，定义 Struct 结构体时，可以采用存储空间递增的顺序，定义每个属性，这样就能节省一些空间。
 
 ```c
 struct foo {

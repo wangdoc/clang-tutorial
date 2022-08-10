@@ -79,7 +79,7 @@ char* tmpname(char* s);
 它的参数是一个字符串变量，`tmpnam()`会把临时文件的文件名复制到这个变量里面，并返回指向该字符串变量的指针。如果生成文件名失败，`tmpnam()`返回空指针 NULL。
 
 ```c
-char filename[L_tmpname];
+char filename[L_tmpnam];
 
 if (tmpnam(filename) != NULL)
   // 输出诸如 /tmp/filew9PMuZ 的文件名
@@ -88,7 +88,7 @@ else
   printf("Something wrong!\n");
 ```
 
-上面示例中，`L_tmpname`是`stdio.h`定义的一个宏，指定了临时文件的文件名长度。
+上面示例中，`L_tmpnam`是`stdio.h`定义的一个宏，指定了临时文件的文件名长度。
 
 `tmpname()`的参数也可以是一个空指针 NULL，同样返回指向文件名字符串的指针。
 

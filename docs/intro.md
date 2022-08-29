@@ -54,7 +54,7 @@ C 语言的哲学是“信任程序员，不要妨碍他们做事”。比如，
 
 （1）K＆R C
 
-`K&R C`指的是 C 语言的原始版本。1978年，C 语言的发明者丹尼斯·里奇（Dennis Ritchie）和布莱恩·柯林（Brian Kernighan）合写了一本著名的教材《C 编程语言》（The C programming language）。由于 C 语言还没有成文的语法标准，这本书就成了公认标准，以两位作者的姓氏首字母作为版本简称“K&R C”。
+`K&R C`指的是 C 语言的原始版本。1978年，C 语言的发明者丹尼斯·里奇（Dennis Ritchie）和布莱恩·柯林汉（Brian Kernighan）合写了一本著名的教材《C 编程语言》（The C programming language）。由于 C 语言还没有成文的语法标准，这本书就成了公认标准，以两位作者的姓氏首字母作为版本简称“K&R C”。
 
 （2）ANSI C（又称 C89 或 C90）
 

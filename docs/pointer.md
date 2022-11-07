@@ -170,7 +170,7 @@ j1 = (short*)0x1234;
 j2 = (short*)0x1236;
 
 ptrdiff_t dist = j2 - j1;
-printf("%d\n", dist); // 1
+printf("%td\n", dist); // 1
 ```
 
 上面示例中，`j1`和`j2`是两个指向 short 类型的指针，变量`dist`是它们之间的距离，类型为`ptrdiff_t`，值为`1`，因为相差2个字节正好存放一个 short 类型的值。

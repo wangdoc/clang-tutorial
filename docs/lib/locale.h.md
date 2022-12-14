@@ -23,7 +23,7 @@
 `setlocale()`用来设置当前的地区。
 
 ```c
-char* setlocal(int category, const char* locale);
+char* setlocale(int category, const char* locale);
 ```
 
 它接受两个参数。第一个参数表示影响范围，如果值为前面五个表示类别的宏之一，则只影响该宏对应的类别，如果值为`LC_ALL`，则影响所有类别。第二个参数通常只为`"C"`（正常模式）或`""`（本地模式）。

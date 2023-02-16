@@ -166,7 +166,7 @@ $ random | sum
 
 ## fclose()
 
-`fclose()`用来关闭已经使用`fopen()`打开的文件。它的原型定义在`stdin.h`。
+`fclose()`用来关闭已经使用`fopen()`打开的文件。它的原型定义在`stdio.h`。
 
 ```c
 int fclose(FILE* stream);

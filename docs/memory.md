@@ -73,7 +73,7 @@ int* p = (int*) malloc(sizeof(int));
 int* p = (int*) malloc(sizeof(*p));
 ```
 
-`malloc()`分配内存有可能分配失败，这时返回常量 NULL。Null 的值为0，是一个无法读写的内存地址，可以理解成一个不指向任何地方的指针。它在包括`stdlib.h`等多个头文件里面都有定义，所以只要可以使用`malloc()`，就可以使用`NULL`。由于存在分配失败的可能，所以最好在使用`malloc()`之后检查一下，是否分配成功。
+`malloc()`分配内存有可能分配失败，这时返回常量`NULL`。`Null`的值为0，是一个无法读写的内存地址，可以理解成一个不指向任何地方的指针。它在包括`stdlib.h`等多个头文件里面都有定义，所以只要可以使用`malloc()`，就可以使用`NULL`。由于存在分配失败的可能，所以最好在使用`malloc()`之后检查一下，是否分配成功。
 
 ```c
 int* p = malloc(sizeof(int));
@@ -114,9 +114,6 @@ int* p = (int*) malloc(n * sizeof(int));
 ```c
 char* p = malloc(4);
 strcpy(p, "abc");
-
-// or
-p = "abc";
 ```
 
 上面示例中，字符指针`p`指向一段4个字节的内存，`strcpy()`将字符串“abc”拷贝放入这段内存，完成了这段内存的初始化。

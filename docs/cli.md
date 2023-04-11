@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
 
 以`./foo hello world`为例，`argc`是3，表示命令行输入有三个组成部分：`./foo`、`hello`、`world`。数组`argv`用来获取这些输入，`argv[0]`是程序名`./foo`，`argv[1]`是`hello`，`argv[2]`是`world`。一般来说，`argv[1]`到`argv[argc - 1]`依次是命令行的所有参数。`argv[argc]`则是一个空指针 NULL。
 
-由于字符串指针可以看成是字符数组，所以下面三种写法是等价的。
+由于字符串指针可以看成是字符数组，所以下面两种写法是等价的。
 
 ```c
 // 写法一
@@ -38,9 +38,6 @@ int main(int argc, char* argv[])
 
 // 写法二
 int main(int argc, char** argv)
-
-// 写法三
-int main(int argc, char argv[][])
 ```
 
 另一方面，每个命令行参数既可以写成数组形式`argv[i]`，也可以写成指针形式`*(argv + i)`。

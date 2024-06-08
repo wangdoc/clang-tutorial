@@ -194,7 +194,7 @@ C 语言的文件操作函数的设计是，如果遇到文件结尾，就返回
 `freopen()`用于新打开一个文件，直接关联到某个已经打开的文件指针。这样可以复用文件指针。它的原型定义在头文件`stdio.h`。
 
 ```c
-FILE* freopen(char* filename, char* mode, FILE stream);
+FILE* freopen(char* filename, char* mode, FILE* stream);
 ```
 
 它跟`fopen()`相比，就是多出了第三个参数，表示要复用的文件指针。其他两个参数都一样，分别是文件名和打开模式。

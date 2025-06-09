@@ -452,13 +452,13 @@ int strcmp(const char* s1, const char* s2);
 下面是一个用法示例。
 
 ```c
-// s1 = Happy New Year
-// s2 = Happy New Year
-// s3 = Happy Holidays
+char* s1 = "Happy New Year";
+char* s2 = "Happy New Year";
+char* s3 = "Happy Holidays";
 
-strcmp(s1, s2) // 0
-strcmp(s1, s3) // 大于 0
-strcmp(s3, s1) // 小于 0
+printf("%d\n",strcmp(s1, s2));// 0
+printf("%d\n",strcmp(s1, s3)); // 大于 0
+printf("%d\n",strcmp(s3, s1)); // 小于 0
 ```
 
 注意，`strcmp()`只用来比较字符串，不用来比较字符。因为字符就是小整数，直接用相等运算符（`==`）就能比较。所以，不要把字符类型（`char`）的值，放入`strcmp()`当作参数。
